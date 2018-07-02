@@ -394,6 +394,19 @@ def user_stats(df):
     print('-' * 40)
 
 
+def display_data(df):
+    """Displays raw data in a structured form after user specifies that they would like to."""
+    count = 0
+    while True:
+        display_answer = input('\nWould you like to view individual trip data? '
+                               'Type \'yes\' or any other character for \'no\'\n')
+        if display_answer.strip().lower() != 'yes':
+            break
+        else:
+            print(df.iloc[count:count + 5, :].to_string(index=False))
+            count = count + 5
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -406,6 +419,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        display_data(df)
 
         restart = input('\nWould you like to restart? Enter \'yes\' or any other character for \'no\'.\n')
         if restart.lower() != 'yes':
