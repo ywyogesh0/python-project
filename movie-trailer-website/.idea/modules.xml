@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/movie-trailer-website.iml" filepath="$PROJECT_DIR$/movie-trailer-website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/posters/posters.iml" filepath="$PROJECT_DIR$/posters/posters.iml" />
+    </modules>
+  </component>
+</project>
